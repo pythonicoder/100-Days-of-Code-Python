@@ -38,6 +38,9 @@ computer_choose = random.randint(0, 2)
 print('computer chose:')
 print(game_images[computer_choose])
 
+# Actually this logic is faulty since according to the rules of rock paper and scissors 
+# This code should be implemented in a way that is different than integer-based implementation.
+# To sum up, the code below is implemented according to the way the lecturer Dr. Angela presented. 
 
 if user_choose >= 3 or user_choose < 0:
     print('You typed invalid number. Please try again')
@@ -49,4 +52,3 @@ elif user_choose > computer_choose:
     print("You win!")
 elif user_choose == computer_choose:
     print("It's a draw!")
-    
